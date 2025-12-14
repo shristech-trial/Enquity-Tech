@@ -43,7 +43,7 @@ const App = () => {
         </BrowserRouter>
       </TooltipProvider>
       <FloatingEnquiry />
-      <WhatsAppFloating />
+      {/* <WhatsAppFloating /> */}
     </QueryClientProvider>
   );
 };

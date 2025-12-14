@@ -32,7 +32,9 @@ export default function CoursesPage() {
   return (
     <div className="min-h-screen bg-slate-950">
       {/* Navbar */}
-      <nav className="px-6 py-6 border-b border-slate-800">
+      {/* <nav className="px-6 py-6 border-b border-slate-800"> */}
+      <nav className="relative z-50 px-6 py-6 border-b border-slate-800">
+
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <div className="flex items-center gap-2">
             <Code2 className="w-8 h-8 text-blue-500" />
@@ -76,8 +78,10 @@ export default function CoursesPage() {
             {mobileMenuOpen ? <X className="w-7 h-7" /> : <Menu className="w-7 h-7" />}
           </button>
           {mobileMenuOpen && (
-          <div className="absolute top-full left-0 right-0 p-4 md:hidden z-50">
-            <div className="bg-slate-900/95 backdrop-blur-xl border border-white/10 rounded-2xl p-6 shadow-2xl flex flex-col gap-4 animate-in slide-in-from-top-2">
+          // <div className="absolute top-full left-0 right-0 p-4 md:hidden z-50">
+<div className="fixed top-[80px] left-0 right-0 p-4 md:hidden z-[999]">
+
+<div className="bg-slate-900/95 backdrop-blur-xl border border-white/10 rounded-2xl p-6 shadow-2xl flex flex-col gap-4 animate-in slide-in-from-top-2">
               {[
                 { label: 'Home', path: '/' },
                 { label: 'About', path: '/about' },
