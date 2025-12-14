@@ -1,8 +1,11 @@
-import { Code2, Users, Trophy, Target } from 'lucide-react';
+import { Code2, Users, Trophy, Target, X, Menu } from 'lucide-react';
 import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 export default function AboutUs() {
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  
   const values = [
     {
       icon: Target,
@@ -30,37 +33,85 @@ export default function AboutUs() {
             <Code2 className="w-8 h-8 text-blue-500" />
             <span className="text-2xl font-bold text-white">Enquity Technologies</span>
           </div>
-          <div className="hidden md:flex items-center gap-8">
-                      {[
-                        { label: 'Home', path: '/' },
-                        { label: 'About', path: '/about' },
-                        { label: 'Courses', path: '/courses' },
-                        { label: 'Placements', path: '/placement' },
-                        { label: 'Contact', path: '/contact' },
-                      ].map((item) => (
-                        item.path.startsWith('/#') ? (
-                          <a 
-                            key={item.label} 
-                            href={item.path} 
-                            className="text-sm font-medium text-gray-300 hover:text-white transition-colors"
-                          >
-                            {item.label}
-                          </a>
-                        ) : (
-                          <Link 
-                            key={item.label} 
-                            to={item.path}
-                            className="text-sm font-medium text-gray-300 hover:text-white transition-colors"
-                          >
-                            {item.label}
-                          </Link>
-                        )
-                      ))}
-                      <button className="px-5 py-2.5 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors shadow-lg shadow-blue-600/20">
-                        Sign In
-                      </button>
-                    </div>
+              <div className="hidden md:flex items-center gap-8">
+            {[
+              { label: 'Home', path: '/' },
+              { label: 'About', path: '/about' },
+              { label: 'Courses', path: '/courses' },
+              { label: 'Placements', path: '/placement' },
+              { label: 'Contact', path: '/contact' },
+            ].map((item) => (
+              item.path.startsWith('/#') ? (
+                <a 
+                  key={item.label} 
+                  href={item.path} 
+                  className="text-sm font-medium text-gray-300 hover:text-white transition-colors"
+                >
+                  {item.label}
+                </a>
+              ) : (
+                <Link 
+                  key={item.label} 
+                  to={item.path}
+                  className="text-sm font-medium text-gray-300 hover:text-white transition-colors"
+                >
+                  {item.label}
+                </Link>
+              )
+            ))}
+            {/* <button className="px-5 py-2.5 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors shadow-lg shadow-blue-600/20">
+              Sign In
+            </button> */}
+          </div>
+
+          {/* Mobile Menu Button */}
+          <button
+            className="md:hidden text-gray-300 hover:text-white transition-colors p-1"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            {mobileMenuOpen ? <X className="w-7 h-7" /> : <Menu className="w-7 h-7" />}
+          </button>
         </div>
+
+        {/* Mobile Menu Overlay */}
+        {mobileMenuOpen && (
+          <div className="absolute top-full left-0 right-0 p-4 md:hidden z-50">
+            <div className="bg-slate-900/95 backdrop-blur-xl border border-white/10 rounded-2xl p-6 shadow-2xl flex flex-col gap-4 animate-in slide-in-from-top-2">
+              {[
+                { label: 'Home', path: '/' },
+                { label: 'About', path: '/about' },
+                { label: 'Courses', path: '/courses' },
+                { label: 'Placements', path: '/placement' },
+                { label: 'Contact', path: '/contact' },
+              ].map((item) => (
+                item.path.startsWith('/#') ? (
+                  <a 
+                    key={item.label} 
+                    href={item.path}
+                    className="text-lg font-medium text-gray-300 hover:text-blue-400 transition-colors"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    {item.label}
+                  </a>
+                ) : (
+                  <Link 
+                    key={item.label} 
+                    to={item.path}
+                    className="text-lg font-medium text-gray-300 hover:text-blue-400 transition-colors"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    {item.label}
+                  </Link>
+                )
+              ))}
+              <hr className="border-gray-800 my-2" />
+              {/* <button className="w-full py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 active:scale-95 transition-all">
+                Sign In
+              </button> */}
+            </div>
+          </div>
+        )}
       </nav>
 
       {/* Header */}

@@ -68,9 +68,9 @@ export default function Hero() {
                 </Link>
               )
             ))}
-            <button className="px-5 py-2.5 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors shadow-lg shadow-blue-600/20">
+            {/* <button className="px-5 py-2.5 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors shadow-lg shadow-blue-600/20">
               Sign In
-            </button>
+            </button> */}
           </div>
 
           {/* Mobile Menu Button */}
@@ -90,9 +90,9 @@ export default function Hero() {
               {[
                 { label: 'Home', path: '/' },
                 { label: 'About', path: '/about' },
+                { label: 'Courses', path: '/courses' },
                 { label: 'Placements', path: '/placement' },
                 { label: 'Contact', path: '/contact' },
-                { label: 'Courses', path: '/#courses' }
               ].map((item) => (
                 item.path.startsWith('/#') ? (
                   <a 
@@ -115,9 +115,9 @@ export default function Hero() {
                 )
               ))}
               <hr className="border-gray-800 my-2" />
-              <button className="w-full py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 active:scale-95 transition-all">
+              {/* <button className="w-full py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 active:scale-95 transition-all">
                 Sign In
-              </button>
+              </button> */}
             </div>
           </div>
         )}

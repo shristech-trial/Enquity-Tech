@@ -1,6 +1,12 @@
 import { Users, BookOpen, Award, TrendingUp } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
+import EnquiryModal from './EnquiryModal';
+import { useState } from 'react';
 
 export default function Stats() {
+
+  const navigate = useNavigate();
+  const [open, setOpen] = useState(false);
   const stats = [
     {
       icon: Users,
@@ -71,12 +77,19 @@ export default function Stats() {
             Join our community today and get access to all courses, challenges, and exclusive content
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
-            <button className="px-6 sm:px-8 py-3 sm:py-4 bg-white text-blue-600 text-sm sm:text-lg font-semibold rounded-lg hover:bg-gray-100 transition-all transform hover:scale-105">
-              Start Learning Free
+            <button onClick={() => setTimeout(() => navigate("/courses"), 0)}  className="px-6 sm:px-8 py-3 sm:py-4 bg-white text-blue-600 text-sm sm:text-lg font-semibold rounded-lg hover:bg-gray-100 transition-all transform hover:scale-105">
+              Start Learning
             </button>
-            <button className="px-6 sm:px-8 py-3 sm:py-4 bg-blue-800 text-white text-sm sm:text-lg font-semibold rounded-lg hover:bg-blue-900 transition-all">
-              View Pricing
-            </button>
+          <button
+        onClick={() => setOpen(true)}
+        className="px-6 sm:px-8 py-3 sm:py-4 bg-blue-800 text-white text-sm sm:text-lg font-semibold rounded-lg hover:bg-blue-900 transition-all"
+        title="Enquiry"
+      >
+              Enquire Now
+      </button>
+
+      {/* Enquiry Modal */}
+      <EnquiryModal open={open} onClose={() => setOpen(false)} />
           </div>
         </div>
       </div>
