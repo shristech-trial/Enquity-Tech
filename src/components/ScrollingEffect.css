@@ -1,0 +1,119 @@
+﻿.scrolling-effect-main {
+  position: relative;
+  gap: 10vh;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 150vh;
+  background-color: #0f172a;
+}
+
+.scrolling-effect-cards {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80vh;
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  border-radius: 16px;
+  border: 1px solid #334155;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+#scrolling-effect-card-one {
+  top: 130%;
+}
+
+#scrolling-effect-card-two {
+  top: 230%;
+}
+
+#scrolling-effect-card-three {
+  top: 250%;
+}
+
+.card-content {
+  text-align: center;
+  padding: 2rem;
+  width: 100%;
+  max-width: 600px;
+}
+
+.card-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+}
+
+.card-content h3 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.card-content p {
+  font-size: 1.125rem;
+  color: #94a3b8;
+  line-height: 1.75;
+}
+
+.scrolling-effect-text {
+  position: absolute;
+  width: 100%;
+  top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+}
+
+.scrolling-effect-text h1 {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.scrolling-effect-text p {
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  color: #94a3b8;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .scrolling-effect-main {
+    min-height: auto;
+  }
+
+  .scrolling-effect-cards {
+    position: relative;
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
+    width: 90vw;
+    height: auto;
+    margin: 2rem auto;
+  }
+
+  #scrolling-effect-card-one,
+  #scrolling-effect-card-two,
+  #scrolling-effect-card-three {
+    top: auto !important;
+  }
+
+  .scrolling-effect-text {
+    position: relative;
+    top: auto !important;
+  }
+}
