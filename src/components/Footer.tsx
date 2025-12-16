@@ -65,9 +65,9 @@ export default function Footer() {
                           {[
                             { label: 'Home', path: '/' },
                             { label: 'About', path: '/about' },
+                            { label: 'Courses', path: '/courses' },
                             { label: 'Placements', path: '/placement' },
                             { label: 'Contact', path: '/contact' },
-                            { label: 'Courses', path: '/#courses' }
                           ].map((item) => (
                             item.path.startsWith('/#') ? (
                               <a 
@@ -131,7 +131,7 @@ export default function Footer() {
                                     </div>
                                     <div>
                                       <h3 className=" font-semibold text-white">Address</h3>
-                                        <p className="text-gray-400">Enquity Tech</p>
+                                        <p className="text-gray-400">Enqti Technologies</p>
                                         <p className="text-gray-400">Office No. 307, 4th Floor</p>
                                         <p className="text-gray-400">Pencil Square Building</p>
                                         <p className="text-gray-400">Near Sandeep Corner, MIDC</p>
@@ -149,9 +149,18 @@ export default function Footer() {
           <p className="text-gray-400 text-sm">
             © 2025 Enquity Technologies. All rights reserved.
           </p>
-          <p className="text-gray-400 text-sm">
-            Developed by <span className="text-blue-400 font-semibold">Shris Tech</span>
-          </p>
+         <p className="text-gray-400 text-sm">
+  Developed by{" "}
+  <a
+    href="https://shristech.com/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-blue-400 font-semibold hover:underline"
+  >
+    Shris Tech
+  </a>
+</p>
+
         </div>
       </div>
     </footer>

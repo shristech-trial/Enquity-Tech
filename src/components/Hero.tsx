@@ -180,7 +180,7 @@ export default function Hero() {
         </div>
 
         {/* Trusted Companies */}
-        <div className="flex flex-col items-center gap-6">
+        {/* <div className="flex flex-col items-center gap-6">
           <p className="text-slate-500 text-sm font-medium uppercase tracking-widest">Trusted by learners from</p>
           <div className="flex flex-wrap justify-center gap-6 sm:gap-12 opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
             {['Microsoft', 'Google', 'Adobe', 'Spotify'].map((company) => (
@@ -189,7 +189,7 @@ export default function Hero() {
               </span>
             ))}
           </div>
-        </div>
+        </div> */}
 
       </div>
 

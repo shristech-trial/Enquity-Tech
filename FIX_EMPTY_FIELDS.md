@@ -105,7 +105,7 @@ Replace your admin template content with this:
                 <strong>⚠️ Action Required:</strong> Please review this enrollment and send the student their course access credentials within 24 hours.
             </div>
             
-            <p>Best regards,<br>Enquity Tech Enrollment System</p>
+            <p>Best regards,<br>Enqti Technologies Enrollment System</p>
         </div>
     </div>
 </body>

@@ -124,7 +124,7 @@
 
             <p style="margin-top: 30px; color: #666;">
                 Best regards,<br>
-                <strong>Enquity Tech Enrollment System</strong>
+                <strong>Enqti Technologies Enrollment System</strong>
             </p>
 
             <div class="timestamp">
@@ -287,7 +287,7 @@
         <div class="content">
             <p class="greeting">Dear {{full_name}},</p>
             
-            <p>Thank you for enrolling with Enquity Tech! We're excited to have you join our learning community. Your enrollment has been successfully processed and confirmed.</p>
+            <p>Thank you for enrolling with Enqti Technologies! We're excited to have you join our learning community. Your enrollment has been successfully processed and confirmed.</p>
 
             <div class="confirmation-box">
                 <h2>Enrollment Confirmed ✓</h2>
@@ -327,11 +327,11 @@
             <p>We're committed to providing you with the best learning experience possible. Our instructors and support team are dedicated to your success.</p>
 
             <p>Happy learning!<br>
-            <strong>The Enquity Tech Team</strong></p>
+            <strong>The Enqti Technologies Team</strong></p>
 
             <div class="footer">
                 <p>This is an automated confirmation email. Please do not reply to this message.</p>
-                <p>&copy; 2025 Enquity Tech. All rights reserved.</p>
+                <p>&copy; 2025 Enqti Technologies. All rights reserved.</p>
             </div>
         </div>
     </div>

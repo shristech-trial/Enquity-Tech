@@ -64,7 +64,7 @@ Thank you for enrolling in {{course}}!
 Your enrollment has been received and processed. You'll receive your course access details within 24 hours.
 
 Best regards,
-Enquity Tech Team
+Enqti Technologies Team
 ```
 
 4. Copy the **Template ID** (it looks like `template_xxxxx`)

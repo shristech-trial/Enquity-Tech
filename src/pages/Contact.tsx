@@ -162,7 +162,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-white mb-2">Address</h3>
-                    <p className="text-gray-400">Enquity Tech</p>
+                    <p className="text-gray-400">Enqti Technologies</p>
                     <p className="text-gray-400">Office No. 307, 4th Floor</p>
                     <p className="text-gray-400">Pencil Square Building</p>
                     <p className="text-gray-400">Near Sandeep Corner, MIDC</p>

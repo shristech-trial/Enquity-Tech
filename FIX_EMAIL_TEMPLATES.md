@@ -83,7 +83,7 @@ New Course Enrollment - {{course}}
             </p>
             
             <p style="margin-top: 20px; color: #999; font-size: 12px;">
-                This is an automated message from the Enquity Tech enrollment system.
+                This is an automated message from the Enqti Technologies enrollment system.
             </p>
         </div>
     </div>
@@ -142,7 +142,7 @@ Welcome to {{course_name}} - Your Enrollment is Confirmed! 🎉
         </div>
         <div class="content">
             <p>Hello {{user_name}},</p>
-            <p>Thank you for enrolling with Enquity Tech! We're excited to have you join our learning community.</p>
+            <p>Thank you for enrolling with Enqti Technologies! We're excited to have you join our learning community.</p>
             
             <div class="confirmation-box">
                 <h2>Enrollment Confirmed ✓</h2>
@@ -164,7 +164,7 @@ Welcome to {{course_name}} - Your Enrollment is Confirmed! 🎉
                 <strong>📧 Need Help?</strong> Reply to this email or contact support@enquitytech.com
             </p>
             
-            <p>Happy learning!<br><strong>The Enquity Tech Team</strong></p>
+            <p>Happy learning!<br><strong>The Enqti Technologies Team</strong></p>
             
             <p style="margin-top: 30px; color: #999; font-size: 12px;">
                 This is an automated confirmation email. Please do not reply directly to this message.
