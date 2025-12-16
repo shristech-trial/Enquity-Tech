@@ -31,7 +31,7 @@ export default function AboutUs() {
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Code2 className="w-8 h-8 text-blue-500" />
-            <span className="text-2xl font-bold text-white">Enquity Technologies</span>
+            <span className="text-2xl font-bold text-white">Enqti Technologies</span>
           </div>
               <div className="hidden md:flex items-center gap-8">
             {[
@@ -118,7 +118,7 @@ export default function AboutUs() {
 
       {/* Header */}
       <div className="relative z-10 max-w-4xl mx-auto px-6 lg:px-8 py-20 text-center">
-        <h1 className="text-5xl lg:text-7xl font-bold text-white mb-8">About Enquity Technologies</h1>
+        <h1 className="text-5xl lg:text-7xl font-bold text-white mb-8">About Enqti Technologies</h1>
         <p className="text-xl lg:text-2xl text-gray-300 max-w-3xl mx-auto">
           Empowering the next generation of developers with world-class education and mentorship.
         </p>
@@ -130,7 +130,7 @@ export default function AboutUs() {
           <div>
             <h2 className="text-4xl font-bold text-white mb-6">Our Story</h2>
             <p className="text-gray-300 text-lg text-justify mb-4">
-              Founded in 2019, Enquity Technologies started with a simple mission: to make quality coding education accessible to everyone.
+              Founded in 2019, Enqti Technologies started with a simple mission: to make quality coding education accessible to everyone.
             </p>
             <p className="text-gray-300 text-justify text-lg mb-4">
               What began as a small community of passionate developers has grown into a thriving platform with over 50,000 students and counting.

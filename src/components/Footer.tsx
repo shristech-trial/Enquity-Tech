@@ -14,7 +14,7 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <Code2 className="w-8 h-8 text-blue-500" />
-              <span className="text-2xl font-bold text-white">Enquity Technologies</span>
+              <span className="text-2xl font-bold text-white">Enqti Technologies</span>
             </div>
             <p className="text-gray-400 mb-6">
               Empowering developers worldwide with cutting-edge coding education and hands-on experience.
@@ -147,7 +147,7 @@ export default function Footer() {
 
         <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-gray-400 text-sm">
-            © 2025 Enquity Technologies. All rights reserved.
+            © 2025 Enqti Technologies. All rights reserved.
           </p>
          <p className="text-gray-400 text-sm">
   Developed by{" "}

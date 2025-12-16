@@ -80,7 +80,7 @@ export const ScrollingEffect = () => {
   return (
     <div className="scrolling-effect-main" ref={mainRef}>
       <div className="scrolling-effect-text" ref={textRef}>
-        <h1>Why Choose Enquity Technologies?</h1>
+        <h1>Why Choose Enqti Technologies?</h1>
         <p>Comprehensive learning features designed for your success</p>
       </div>
       <div className="scrolling-effect-cards" id="scrolling-effect-card-one" ref={cardOneRef}>

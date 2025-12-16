@@ -7,7 +7,7 @@
   </defs>
   <!-- Background -->
   <rect width="200" height="200" fill="#0f172a" rx="20"/>
-  <!-- Main shape - stylized E for Enquity -->
+  <!-- Main shape - stylized E for Enqti -->
   <g fill="url(#grad1)">
     <!-- Vertical bar -->
     <rect x="50" y="40" width="20" height="120" rx="10"/>

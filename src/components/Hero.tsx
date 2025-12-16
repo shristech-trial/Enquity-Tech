@@ -37,7 +37,7 @@ export default function Hero() {
           <div className="flex items-center gap-2 cursor-pointer">
             <Code2 className="w-8 h-8 text-blue-500" />
             <span className="text-xl sm:text-2xl font-bold text-white tracking-tight">
-              Enquity Technologies
+              Enqti Technologies
             </span>
           </div>
 
@@ -152,7 +152,7 @@ export default function Hero() {
         <div className="max-w-4xl mx-auto mb-16">
           <div className="bg-slate-900/40 backdrop-blur-md rounded-2xl border border-white/5 p-6 sm:p-10 shadow-2xl">
             <p className="text-slate-300 font-medium text-sm sm:text-base mb-8">
-              Since 2019, over <span className="text-white font-bold">50,000</span> Enquity Technologies members have launched successful tech careers
+              Since 2019, over <span className="text-white font-bold">50,000</span> Enqti Technologies members have launched successful tech careers
             </p>
             
             <div className="flex flex-wrap items-center justify-center gap-8 sm:gap-16">
